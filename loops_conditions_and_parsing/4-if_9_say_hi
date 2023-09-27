@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 #comment
 i=1
-<<<<<<< HEAD
 while [$i -lt 11]
 do
         echo "Best School"
@@ -11,16 +10,5 @@ else
         echo "Best School"
 fi
 ((i+1))
-=======
-while [ $i -lt 11 ]
-do
-    echo "Best School"
-    ((i++))
-if [ $i -eq 9 ]; then
-    echo "Best School"
-    echo "Hi"
-else 
-    echo "Best School"
-fi 
->>>>>>> bb19414973866b47e335a895da5360f154e9dac7
 done
+
