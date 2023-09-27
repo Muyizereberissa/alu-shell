@@ -17,7 +17,7 @@ do
    ;;
 
  *) 
-  case$i
+  echo$i
   esac
   ((i++))
 done
