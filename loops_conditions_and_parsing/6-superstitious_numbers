@@ -1,32 +1,47 @@
 #!/usr/bin/env bash
 #comment
-i=1
-while [ $i -le 20 ]
+while [ $counter -le 20 ]
+
 do
-  case $i in
- 4)
-   echo "4"
-   echo -e "$i\nbad luck from China"
 
-   ;;
+    case $counter in
 
- 9)
-   echo "9"
-   echo -e "$i\nbad luck from Japan"
+        4)
 
-   ;;
+            echo "4"
 
- 17)
-   echo "17"
-   echo -e "$i\nbad luck from Italy"
+            echo "bad luck from China"
 
-   ;;
+            ;;
 
- *)
+        9)
 
-  echo$i
-  esac
-  ((i++))
+            echo "9"
+
+            echo "bad luck from Japan"
+
+            ;;
+
+        17)
+
+            echo "17"
+
+            echo "bad luck from Italy"
+
+            ;;
+
+        *)
+
+            echo $counter
+
+            ;;
+
+    esac
+
+    ((counter++))
+
+ 
+
 done
 
 
