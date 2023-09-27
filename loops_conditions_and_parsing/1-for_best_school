@@ -3,5 +3,5 @@
 for [i=1; i<=10; i=i++]
 do
 #repition
-echo "$Best School"
+echo "Best School"
 done
