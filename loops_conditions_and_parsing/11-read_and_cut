@@ -2,7 +2,7 @@
 #comment
 file="/etc/passwd"
 
-if [ -e "$file"];then
+if [ -e "$file" ];then
 
 while IFS=: read -r username_userid__home_directory_;do:
 
