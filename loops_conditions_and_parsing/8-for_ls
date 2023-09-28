@@ -1,12 +1,15 @@
 #!/usr/bin/env bash
 #comment
 
-for items in*
+for items in *
 do
 
   if [[ $item == .*]]
+
    then
+
    "continue"
+
   fi
 
  name_part=$(echo "$item" | cut -d "-" -f 2-)
