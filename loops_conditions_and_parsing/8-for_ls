@@ -2,17 +2,18 @@
 #comment
 
 for items in*
+
 do
 
-  if [[ $item == .* ]]
+  if [[ $items == .* ]]
 
    then
 
-   "continue"
+   continue
 
   fi
 
- name_part=$(echo "$item" | cut -d "-" -f 2-)
+ name_part=$(echo "$items" | cut -d "-" -f 2-)
 
   echo "$name_part"
 
