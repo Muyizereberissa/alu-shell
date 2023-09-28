@@ -1,20 +1,30 @@
 #!/usr/bin/env bash
 #comment
 
-for items in*
+for items in *
+
+
+
 
 do
 
+
   if [[ $items == .* ]]
+
 
    then
 
+
    continue
+
 
   fi
 
- name_part=$(echo "$items" | cut -d "-" -f 2-)
+
+  name_part=$(echo "$items" | cut -d "-" -f 2-)
+
 
   echo "$name_part"
+
 
 done
