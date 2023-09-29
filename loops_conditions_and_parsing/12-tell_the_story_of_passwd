@@ -2,11 +2,10 @@
 #comment
 while IFS=: read -r f1 f2 f3 f4 f5 f6 f7;                                                                                              
 
-do                                                                                                                                     
+do
+	echo "echo "The user $f1 is part of the $f4 gang, lives in $f6 and rides $f7. $f3's place is protected by the passcode $f2, more inf\
 
-        echo "The user $f1 is part of the $f4 gang, lives in $f6 and rides $f7. $f3's place is protected by the passcode $f2, more inf\
-
-              o about the user here: $f5"                                                                                                            
+o about the user here: $f5"
 
                                                                                                                                        
 
