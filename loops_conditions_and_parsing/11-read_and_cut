@@ -6,7 +6,7 @@ if [ -e "$file" ]
 	
 then
 
- while IFS=: read -r username_userid__home_directory_;do
+ while IFS=: read -r username_userid_home_directory_;do
 
 	echo "Username:$username"
 	echo "User ID:$userid"
