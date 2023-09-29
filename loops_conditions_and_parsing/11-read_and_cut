@@ -5,11 +5,11 @@ file="/etc/passwd"
 if [ -e "$file" ];
 then
 
-while IFS=: read -r username_userid__home_directory_;
-do
-	echo "$Username:username"
-	echo "$User ID:userid"
-	echo "$Home Directory:home_directory"
+while IFS=: read -r username_userid__home_directory_;do
+
+	echo "Username:$username"
+	echo "User ID:$userid"
+	echo "Home Directory:$home_directory"
 done 
 else
 	echo "The file $file_path does not exist."
