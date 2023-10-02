@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# a Bash script that stops 4-to_infinity_and_beyond process
+pkill "$( grep -f ./7-highlander)"
+while 
+do 
+	echo "To infinity and beyond"
+	sleep 2
+	echo "I am invincible!!!"
+done
