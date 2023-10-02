@@ -2,7 +2,7 @@
 #Bash script that displays To infinity and beyond indefinitely.
 while :
 do
-     echo "To infinity and beyond"
+     echo "To infinity and beyonid"
 sleep 2
 done
 
