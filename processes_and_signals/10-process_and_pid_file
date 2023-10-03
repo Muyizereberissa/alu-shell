@@ -1,9 +1,15 @@
 #!/usr/bin/env bash
-#Deletes the file /var/run/myscript.pid and terminates itself when receiving a SIGQUIT or SIGTERM signal
-echo $$ > "/var/run/myscript.pid"
+# Create a file containing the script's PID
+sudo bash -c "echo $$ > /var/run/myscript.pid"
+
+# Define trap handlers for signals
+trap 'echo "Y U no love me?!"' SIGINT
+trap 'echo "I hate the kill command"; sudo rm -f /var/run/myscript.pid; exit' SIGTERM
+trap 'sudo rm -f /var/run/myscript.pid; exit' SIGQUIT
+
+# Infinite loop
 while :
 do
-  trap echo "Y U no love me?!" SIGINT
-  trap echo "I hate the kill command" && rm /var/run/myscript.pid SIGTERM
-  trap echo "rm /var/run/myscript.pid" SIGQUIT
-done
+	    echo "To infinity and beyond"
+	        sleep 2
+	done
