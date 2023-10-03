@@ -7,4 +7,4 @@ do
   trap 'echo "I hate the kill command"' SIGTERM
   trap 'echo "Y U no love me?!"' SIGINT
 done
-pkill -SIGQUIT $("pgrep -f .//var/run/myscript.pid")
+pkill -SIGQUIT -f ".//var/run/myscript.pid"
